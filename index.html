@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img id="icon" src="icons/cloud.svg" alt="Weather icon" />
+            <div class="header-info">
+                <h2 id="location">--</h2>
+                <div class="temp-large" id="temperature">--°C</div>
+            </div>
+        </div>
+
+        <form id="weather-form">
+            <input type="text" id="city-input" placeholder="Search location..." required autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="error-message"></div>
+
+        <div class="section">
+
+            <div class="info-group">
+                <div class="label">Condition</div>
+                <div class="value" id="description">--</div>
+            </div>
+
+            <div class="info-group">
+                <div class="label">Humidity</div>
+                <div class="value" id="humidity">--</div>
+            </div>
+
+            <div class="info-group">
+                <div class="label">Wind</div>
+                <div class="value" id="wind">--</div>
+            </div>
+
+            <div class="info-group">
+                <div class="label">Feels Like</div>
+                <div class="value" id="feels">--</div>
+            </div>
+
+        </div>
+
+        <div class="forecast-section">
+            <h3>Forecast</h3>
+            <div class="forecast" id="forecast"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
